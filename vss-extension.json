@@ -4,7 +4,7 @@
   "publisher": "bonelol",
   "version": "1.1.0",
   "name": "Mojo Ext",
-  "description": "Import ticket to projects on Azure Devops from Mojo Helpdesk",
+  "description": "Import ticket to projects on Azure DevOps from Mojo Helpdesk",
   "public": false,
   "baseUri": "http://localhost:9000",
   "categories": ["Azure Repos"],

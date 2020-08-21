@@ -1,7 +1,7 @@
 {
   "name": "mojo-ext",
   "version": "1.1.0",
-  "description": "Import ticket to projects on Azure Devops from Mojo Helpdesk",
+  "description": "Import ticket to projects on Azure DevOps from Mojo Helpdesk",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server -p --open --config webpack.config.js",
