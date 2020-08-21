@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "id": "mojo-ext",
+  "publisher": "bonelol",
+  "version": "1.1.0",
+  "name": "Mojo Ext",
+  "description": "Import ticket to projects on Azure Devops from Mojo Helpdesk",
+  "public": false,
+  "baseUri": "http://localhost:9000",
+  "categories": ["Azure Repos"],
+  "targets": [
+      {
+          "id": "Microsoft.VisualStudio.Services"
+      }
+  ],
+  "scopes": ["vso.work_write"],
+  "contributions": [
+      {
+          "id": "mojo-hub",
+          "type": "ms.vss-web.hub",
+          "targets": [
+              "ms.vss-code-web.code-hub-group"
+          ],
+          "properties": {
+              "name": "Mojo",
+              "uri": "index.html"
+          }
+      }
+  ],
+  "files": [
+      {
+          "path": "build",
+          "addressable": true
+      },
+      {
+          "path": "node_modules/vss-web-extension-sdk/lib",
+          "addressable": true,
+          "packagePath": "lib"
+      }
+  ]
+}

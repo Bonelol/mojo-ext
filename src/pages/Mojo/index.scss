@@ -1,0 +1,11 @@
+.mojo {
+    .mojo-id {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+
+        > input {
+            max-width: 360px;
+        }
+    }
+}

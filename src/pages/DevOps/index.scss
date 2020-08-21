@@ -1,0 +1,25 @@
+.devOps {
+    & > div + div {
+        margin-top: 4px;
+    }
+
+    &-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        & > div {
+            width: calc(50% - 2px);
+        }
+    
+        label {
+            padding: 8px 4px;
+            display: block;
+            color: #40a9ff;
+        }
+    }
+    
+    &-row + &-row {
+        margin-top: 8px;
+    }
+}

@@ -1,0 +1,14 @@
+.comments {
+    > table {
+        width: 100%;
+        table-layout: fixed;
+
+        td {
+            padding: 4px 2px;
+        }
+
+        td:first-child {
+            width: 32px;
+        }
+    }
+}

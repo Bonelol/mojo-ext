@@ -1,0 +1,9 @@
+.attachments {
+    display: inline;
+    position: relative;
+
+    > div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

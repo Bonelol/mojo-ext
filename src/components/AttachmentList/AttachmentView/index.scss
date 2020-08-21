@@ -1,0 +1,64 @@
+.attachment-view {    
+    position: relative;
+    width: 128px;
+    min-height: 90px;
+    margin-right: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #bae7ff;
+    border-radius: 4px;
+
+    &.previewable {
+        width: 200px;
+    }
+
+    &:hover .attachment-view-overlay, &.checked .attachment-view-overlay {
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.4);
+        border-radius: 4px;
+
+        .attachment-buttons {
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }          
+
+        .attachment-name {
+            position: absolute;
+            bottom: 0;
+            color: #fff;
+            background: #40a9ff;
+            padding: 2px;
+            text-align: center;
+            width: 100%;
+        }
+    }
+
+    &.checked .attachment-view-overlay {
+        .attachment-buttons {
+            button:first-child {
+                color: #40a9ff;
+                background-color: #fff;
+                border-color: #40a9ff;
+            }
+        }   
+    }
+
+    .attachment-view-overlay {
+        display: none;
+    }
+
+    .attachment-thumb {
+        font-size: 36px;
+
+        > img {
+            width: 200px;
+        }
+    }
+}
