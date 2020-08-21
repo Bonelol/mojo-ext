@@ -19,7 +19,7 @@
           "id": "mojo-hub",
           "type": "ms.vss-web.hub",
           "targets": [
-              "ms.vss-code-web.code-hub-group"
+              "ms.vss-work-web.work-hub-group"
           ],
           "properties": {
               "name": "Mojo",
