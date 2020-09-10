@@ -66,7 +66,7 @@ module.exports = {
       canPrint: true
     }),
     new UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       uglifyOptions: {
         ecma: 8,
         compress: {
@@ -79,20 +79,6 @@ module.exports = {
       }
     })
   ],
-  optimization: {
-    minimizer: [new UglifyJsPlugin({
-      sourceMap: true,
-      uglifyOptions: {
-        ecma: 8,
-        compress: {
-          unused: false
-        },
-        output: {
-          comments: false,
-          beautify: false
-        }
-      }})],
-  },
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.ts', '.tsx'],
     alias: {
